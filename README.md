@@ -55,7 +55,6 @@ output {
     codec => rubydebug
   }
  
-  # Sending properly parsed log events to elasticsearch
   elasticsearch {
     hosts => ["localhost:9200"]
   }
@@ -74,8 +73,8 @@ write code to genrate log in your code like LOG.log(Level.INFO, response)
 run application and it would write logs in log files
 
 # 5.Kibana Portal Configuration
-got to http://localhost:5601/app/kibana and create an index pattern logstash-* to see the indexed data
-Management>ndex Patterns>logstash-*
+Go to http://localhost:5601/app/kibana and create an index pattern logstash-* to see the indexed data
+Management>Index Patterns>logstash-*
 now go to discover to see logs, now you can apply filter, search etc in it.
 
 
